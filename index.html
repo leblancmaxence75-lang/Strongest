@@ -91,18 +91,18 @@
 <body>
 
     <h1>Power Clash</h1>
-    <p>Qui gagne le combat ?</p>
+    <p>Qui est le plus puissant ?</p>
 
     <div class="container">
         <div class="card" id="char1" onclick="vote(0)">
-            <img src="" alt="Perso 1" id="img1">
+            <img src="" alt="" id="img1">
             <div class="name" id="name1"></div>
         </div>
 
         <div class="vs">VS</div>
 
         <div class="card" id="char2" onclick="vote(1)">
-            <img src="" alt="Perso 2" id="img2">
+            <img src="" alt="" id="img2">
             <div class="name" id="name2"></div>
         </div>
     </div>
@@ -111,14 +111,18 @@
 
     <script>
         const characters = [
-            { name: "Goku", img: "https://i.pinimg.com/originals/a3/71/84/a37184284b3f88f01c80f4f9f6e6d19e.jpg" },
-            { name: "Saitama", img: "https://i.pinimg.com/originals/73/4d/76/734d76465492d30802c2e0b57223b20e.jpg" },
-            { name: "Jin Mori", img: "https://static.wikia.nocookie.net/godofhighschool/images/3/3d/Mori_Jin_Volume_1.png" },
-            { name: "Deku", img: "https://i.pinimg.com/originals/25/11/4d/25114d7671754402684725350c3779e2.jpg" },
-            { name: "Makima", img: "https://i.pinimg.com/736x/21/2e/8b/212e8b2b78912389d3806a6b8f39589d.jpg" },
-            { name: "Archie Sonic", img: "https://static.wikia.nocookie.net/vsbattles/images/0/02/Super_Sonic_Archie.png" },
-            { name: "Anti-Spiral", img: "https://static.wikia.nocookie.net/vsbattles/images/8/8d/Anti-Spiral_render.png" },
-            { name: "Gojo Satoru", img: "https://i.pinimg.com/originals/a0/0a/73/a00a73d8a98072124504104c9528f804.jpg" }
+            { name: "Goku", img: "https://images.tntdrama.com/tnt/$~images/2019-03/dbz_goku_0.jpg" },
+            { name: "Saitama", img: "https://cdn.unitycms.io/images/8S-f8f8_K9mAnG4p_8K-K8.jpg" },
+            { name: "Luffy", img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png" }, // Image test stable
+            { name: "Sung Jin-Woo", img: "https://static.hitek.fr/img/actualite/illu/588825700/sung-jin-woo-solo-leveling.jpg" },
+            { name: "Ichigo Kurosaki", img: "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/07/Bleach-Ichigo-Kurosaki-1.jpg" },
+            { name: "Gon Freecss", img: "https://staticg.sportskeeda.com/editor/2022/07/87864-16584065365319-1920.jpg" },
+            { name: "Tanjiro Kamado", img: "https://img.izismile.com/img/img13/20201026/640/the_most_powerful_demon_slayer_characters_ranked_640_01.jpg" },
+            { name: "Jotaro Kujo", img: "https://static1.srcdn.com/wordpress/wp-content/uploads/2021/03/Jojo-Jotaro-Kujo-Stardust-Crusaders.jpg" },
+            { name: "Aizen Sosuke", img: "https://static1.srcdn.com/wordpress/wp-content/uploads/2022/10/Sosuke-Aizen-Bleach.jpg" },
+            { name: "Sasuke Uchiha", img: "https://static1.srcdn.com/wordpress/wp-content/uploads/2020/03/Sasuke-Uchiha-Naruto.jpg" },
+            { name: "Jin Mori", img: "https://images._site_.com/jinmori.jpg" }, // Lien placeholder
+            { name: "Anti-Spiral", img: "https://i.ytimg.com/vi/1e_9v4_I9Y0/maxresdefault.jpg" }
         ];
 
         function loadDuel() {
