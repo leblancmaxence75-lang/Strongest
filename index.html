@@ -111,29 +111,40 @@
 
     <script>
         const characters = [
-            { name: "Goku", img: "https://images.tntdrama.com/tnt/$~images/2019-03/dbz_goku_0.jpg" },
-            { name: "Saitama", img: "https://cdn.unitycms.io/images/8S-f8f8_K9mAnG4p_8K-K8.jpg" },
-            { name: "Luffy", img: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png" }, // Image test stable
-            { name: "Sung Jin-Woo", img: "https://static.hitek.fr/img/actualite/illu/588825700/sung-jin-woo-solo-leveling.jpg" },
-            { name: "Ichigo Kurosaki", img: "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/07/Bleach-Ichigo-Kurosaki-1.jpg" },
-            { name: "Gon Freecss", img: "https://staticg.sportskeeda.com/editor/2022/07/87864-16584065365319-1920.jpg" },
-            { name: "Tanjiro Kamado", img: "https://img.izismile.com/img/img13/20201026/640/the_most_powerful_demon_slayer_characters_ranked_640_01.jpg" },
-            { name: "Jotaro Kujo", img: "https://static1.srcdn.com/wordpress/wp-content/uploads/2021/03/Jojo-Jotaro-Kujo-Stardust-Crusaders.jpg" },
-            { name: "Aizen Sosuke", img: "https://static1.srcdn.com/wordpress/wp-content/uploads/2022/10/Sosuke-Aizen-Bleach.jpg" },
-            { name: "Sasuke Uchiha", img: "https://static1.srcdn.com/wordpress/wp-content/uploads/2020/03/Sasuke-Uchiha-Naruto.jpg" },
-            { name: "Jin Mori", img: "https://images._site_.com/jinmori.jpg" }, // Lien placeholder
-            { name: "Anti-Spiral", img: "https://i.ytimg.com/vi/1e_9v4_I9Y0/maxresdefault.jpg" }
+            { name: "Goku", img: "https://via.placeholder.com/300x400?text=Goku" },
+            { name: "Saitama", img: "https://via.placeholder.com/300x400?text=Saitama" },
+            { name: "Luffy", img: "https://via.placeholder.com/300x400?text=Luffy" },
+            { name: "Sung Jin-Woo", img: "https://via.placeholder.com/300x400?text=Sung+Jin+Woo" },
+            { name: "Ichigo Kurosaki", img: "https://via.placeholder.com/300x400?text=Ichigo" },
+            { name: "Gon Freecss", img: "https://via.placeholder.com/300x400?text=Gon" },
+            { name: "Tanjiro Kamado", img: "https://via.placeholder.com/300x400?text=Tanjiro" },
+            { name: "Jotaro Kujo", img: "https://via.placeholder.com/300x400?text=Jotaro" },
+            { name: "Aizen Sosuke", img: "https://via.placeholder.com/300x400?text=Aizen" },
+            { name: "Sasuke Uchiha", img: "https://via.placeholder.com/300x400?text=Sasuke" },
+            { name: "Jin Mori", img: "https://via.placeholder.com/300x400?text=Jin+Mori" },
+            { name: "Anti-Spiral", img: "https://via.placeholder.com/300x400?text=Anti-Spiral" },
+            { name: "Gojo Satoru", img: "https://via.placeholder.com/300x400?text=Gojo" },
+            { name: "Makima", img: "https://via.placeholder.com/300x400?text=Makima" },
+            { name: "Deku", img: "https://via.placeholder.com/300x400?text=Deku" },
+            { name: "Archie Sonic", img: "https://via.placeholder.com/300x400?text=Archie+Sonic" },
+            /* Nouveaux Ajouts */
+            { name: "Guts", img: "https://via.placeholder.com/300x400?text=Guts" },
+            { name: "Rimuru Tempest", img: "https://via.placeholder.com/300x400?text=Rimuru" },
+            { name: "Anos Voldigoad", img: "https://via.placeholder.com/300x400?text=Anos" },
+            { name: "Yoriichi", img: "https://via.placeholder.com/300x400?text=Yoriichi" },
+            { name: "Gilgamesh", img: "https://via.placeholder.com/300x400?text=Gilgamesh" },
+            { name: "Whitebeard", img: "https://via.placeholder.com/300x400?text=Whitebeard" },
+            { name: "Madara Uchiha", img: "https://via.placeholder.com/300x400?text=Madara" },
+            { name: "Esdeath", img: "https://via.placeholder.com/300x400?text=Esdeath" },
+            { name: "Mob (Shigeo)", img: "https://via.placeholder.com/300x400?text=Mob" },
+            { name: "Baki Hanma", img: "https://via.placeholder.com/300x400?text=Baki" }
         ];
 
         function loadDuel() {
             document.getElementById('next-btn').style.display = 'none';
-            
             let i1 = Math.floor(Math.random() * characters.length);
             let i2 = Math.floor(Math.random() * characters.length);
-
-            while (i1 === i2) {
-                i2 = Math.floor(Math.random() * characters.length);
-            }
+            while (i1 === i2) { i2 = Math.floor(Math.random() * characters.length); }
 
             document.getElementById('name1').innerText = characters[i1].name;
             document.getElementById('img1').src = characters[i1].img;
